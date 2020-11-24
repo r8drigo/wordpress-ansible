@@ -1,0 +1,19 @@
+---
+# tasks file for server
+  - name: Atualiza o cache apt de nosso servidor
+    apt: update_cache=yes cache_valid_time=3600
+ 
+  - name: Instala os pacotes necessarios
+    apt: name=apache2 state=present
+  - name: Instala os pacotes necessarios
+    apt: name=mysql-server state=present
+  - name: Instala os pacotes necessarios
+    apt: name=php5-mysql state=present
+  - name: Instala os pacotes necessarios
+    apt: name=php5 state=present
+  - name: Instala os pacotes necessarios
+    apt: name=libapache2-mod-php5 state=present
+  - name: Instala os pacotes necessarios
+    apt: name=php5-mcrypt state=present
+  - name: Instala os pacotes necessarios
+    apt: name=php5-mcrypt state=present
